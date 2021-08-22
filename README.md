@@ -8,9 +8,9 @@ Explanation of convolution:
 
 Let's consider we have an input image of only one channel of size 5x5 and a filter of size 3x3 with stride length 1. The filter will be passed  through the image with stride of 1 to compute feature map thus it will be calculated as the following
 
-Input Image (5x5x1)                 Filter (3x3)
+
 <p align="center">
-<img src="/conv.png" width="75%" height="75%"> 
+<img src="/conv1.png" width="75%" height="75%"> 
 </p>                            
  
      
