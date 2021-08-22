@@ -32,8 +32,7 @@ For instance in the example above, The Im_in matrix will be as the following: {2
 # Optimized Implementation of convolution:
 The optimized implementation is based on what was implemented on CMSIS with some modifications as to be accelerated on a specific hardware. The HWC convolve function is firstly called with the inputs. There are four nested for loops: the outer loops loop over the x and y dimensions of the output matrix while the inner loops loop over the x and y dimension of the kernel. For every two strides, the mat-mult function is called and the pbuffer with weights of two strides are passed. 
 In the mat_mult function, matrix multiplication is applied, __SMLAD_4Ux8bits
- function is used to imitate a unit composed of four parallel multiples and a unit of 8-bits.
- 
+ function is used to imitate a unit composed of four parallel multiples and a unit of 8-bits. This implementation will be found in cmsis_convolve_v2.cpp in the sources directory
  
  
  
