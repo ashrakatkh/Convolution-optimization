@@ -9,13 +9,19 @@ Explanation of convolution:
 Let's consider we have an input image of only one channel of size 5x5 and a filter of size 3x3 with stride length 1. The filter will be passed  through the image with stride of 1 to compute feature map thus it will be calculated as the following
 
 Input Image (5x5x1)                 Filter (3x3)
-                              
+<p align="center">
+<img src="/conv.png" width="75%" height="75%"> 
+</p>                            
  
      
 The same is applied for images of channels greater than 1 and more than one filter. In general, each filter has channels equal to the input channels. The channels of the output features map is equal  to the number of filters.
  
  
 # General Implementation of convolution:
+
+<p align="center">
+<img src="conv.png" width="75%" height="75%"> 
+</p>
 
 This part explains the general implementation of convolution function, how to pass input and the flow of the code.
 There are 6 nested for loops, the first outer loop loops over the number of filters which is the number of the output channels, the following two loops loop over the y and x dimensions of the output respectively. The fourth and fifth loops loop over the y and x dimensions of the filter and the last loop loops over the number of input channels. In the inner loop the weight of the input image is multiplied by the weights of the kernel and added to the variable conv_out  which is assigned to the output matrix at the end of one iteration.
