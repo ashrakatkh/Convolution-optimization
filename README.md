@@ -10,7 +10,7 @@ Let's consider we have an input image of only one channel of size 5x5 and a filt
 
 
 <p align="center">
-<img src="/conv1.png" width="75%" height="75%"> 
+<img src="/conv1.png" width="50%" height="50%"> 
 </p>                            
  
      
